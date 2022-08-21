@@ -16,6 +16,9 @@
     height: 350px;
     overflow: hidden;
 }
+.container__img--disabled{
+    opacity: .35;
+}
 .left__label{
     position: absolute;
     text-align: center;
