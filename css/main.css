@@ -1,23 +1,29 @@
 .main__conteiner {
     display: flex;
     flex-direction: row;
+    
 }
-.container {
+.shop-card {
     width: 265px;
     height: 525px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 16px #0000003d;
+    gap: 10px;
 }
-.container__img {
+.shop-card__img {
     /* background: url(../img/iphone11.jpg); */
     display: block;
     width: 261px;
     height: 350px;
     overflow: hidden;
 }
-.container__img--disabled{
+.shop-card__img--disabled{
     opacity: .35;
+}
+.sh-c__r--r--img{
+    height: 12px;
+    width: 16px;
 }
 .left__label{
     position: absolute;
@@ -31,20 +37,21 @@
     border-radius: 10%;
 }
 
-/* .container__img:hover {
-    background: url(../img/iphone112.png) no-repeat;
-} */
-
 a {
-    text-decoration: none   ;
+    text-decoration: none;
     cursor: pointer;
 }
-.container__title {
+.shop-card__title {
     margin-left: 10px;
 }
 
-.container__color--list{
-    padding-left: 20px;
+.shop-card__color{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 10px;
+    gap: 5px;
 }
 
 .dot {
@@ -84,61 +91,59 @@ a {
     background-color: pink;
 }
 
-.container__title{
+.shop-card__title{
     font-size: 14px;
 }
 
-.container__rating {
-    display: inline-block;
+.shop-card__rating {
     margin-left: 10px;
+    display: flex;
+    align-items: center ;
+    
 }
 
-.container__rating span {
+.shop-card__rating span {
     padding: 0;
 	font-size: 18px;
 	line-height: 1px;
 	color: grey;
 }
 
-.container__rating > span:before {
-	content: '★';
-}
-.container__rating > span.active {
+.shop-card__rating > span:before {
+	content: '★';}
+
+.shop-card__rating > span.active {
 	color: gold;
+    content: '★';
 }
 
-.container__rating--reviews{
+.shop-card__rating--reviews{
     font-size: 12px;
     color:grey;
 }
 
-.space{
-    width: 100%;
-    height: 18px;
-}
-
- .price{
+.shop-card__price{
     display: flex;
     padding: 0 15px 0 0;
     justify-content: space-between;
 
  }
-.container__price--value{
+.shop-card__price__box--value{
     margin-left: 10px;
     font-size: 20px;
 }
 
-.container__price--currency{
+.shop-card__price__box--currency{
     font-size: 16px;
     margin-left: -2px;
 }
 
-.container__cart{
+.shop-card__cart--ico{
     width: 24px;
     height: 24px;
 }
 
-.container__ready{
+.shop-card__ready{
     margin-top: 5px;
     display: flex;
 }
