@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
 }
+
 .shop-card {
     width: 265px;
     height: 525px;
@@ -11,7 +11,38 @@
     flex-direction: column;
     box-shadow: 0 2px 16px #0000003d;
     gap: 10px;
+    position: relative;
+    
 }
+.shop-card__img{
+    display: grid;  
+}
+
+.right__label{
+    position: absolute;
+    border-radius: 5px;
+    width: 26px;
+    height: 25px;
+    top: 1%;
+    left: 88%;
+    display: flex;
+    background: #fff;
+}
+.right__labels--img{
+    width: 25px;
+    height: 25px;
+}
+.right__label1{
+    position: absolute;
+    border-radius: 5px;
+    width: 26px;
+    height: 25px;
+    top: 7%;
+    left: 88%;
+    background: white;
+}
+
+
 .shop-card__img {
     /* background: url(../img/iphone11.jpg); */
     display: block;
